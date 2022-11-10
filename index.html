@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Simulador</title>
 </head>
 <body>
-    
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <div class="container mt-5 conversor">
+                <div class="card m-auto">
+                    <h1 class="card-header">Conversor de Unidades</h1>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col mb-3 mx-auto">
+                                    <label for="monto" class="form-label">Ingrese cantidad </label>
+                                    <input type="text" id="valor" value="1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col input-group mb-3" id="inicial">
+                                    <select class="form-select" id="monedaInicial">
+        
+                                    </select>
+                                </div>
+                                <div class="col-1" id="icono">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </div>
+                                <div class="col input-group mb-3" id="final">
+                                    <select class="form-select" id="monedaFinal">
+        
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="conversionTxt">Convirtiendo unidad...</div>
+                    </div>
+                    <div class="card-footer d-grid">       
+                        <button id="btnConversion" class="btn btn-outline-primary btn-lg m-auto">
+                            Resultado
+                        </button>
+                    </div>
+                </div>        
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
