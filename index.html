@@ -10,9 +10,17 @@
 </head>
 <body>
     <header class="header">
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./img/icono.svg" alt="Logo" width="40" height="34" class="d-inline-block align-text-top" id="logo">
+                Simulador
+              </a>
+            </div>
+          </nav>
     </header>
-    <main class="main">
-        <section>
+    <main>
+        <section class="section">
             <div class="container mt-5 conversor">
                 <div class="card m-auto">
                     <h1 class="card-header">Conversor de Unidades de Datos</h1>
@@ -20,7 +28,7 @@
                         <form action="">
                             <div class="row">
                                 <div class="col mb-3 mx-auto">
-                                    <label for="monto" class="form-label">Ingrese cantidad </label>
+                                    <label for="monto" class="form-label">Ingrese Unidad </label>
                                     <input type="text" id="valor" value="1">
                                 </div>
                             </div>
@@ -32,7 +40,7 @@
                                 </div>
                                 <div class="col-1" id="flecha">
                                     <button type="button" class="btn btn-outline-warning">
-                                        invertir
+                                        Invertir
                                     </button>
                                 </div>
                                 <div class="col input-group mb-3" id="final">

@@ -3,6 +3,32 @@ body{
     min-height: 100vh;
 }
 
+.header{
+    background-color: rgb(8, 198, 8);
+}
+
+#logo{
+    color: yellow;
+}
+
+.bg-light{
+--bs-bg-opacity: 0;
+}
+
 .card-header{
     background-color: brown;
+    color: white;
+    text-align: center;
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.footer p{
+    background-color: black;
+    color: aliceblue;
+    font-size: 30px;
+    margin-bottom: 0rem;
+    text-align: center;
 }
