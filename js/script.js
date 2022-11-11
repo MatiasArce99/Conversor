@@ -1,7 +1,7 @@
 const apiKey = 'cd9bdd00ecb28000e4d862b0';
 
 const valor = document.querySelector('#valor'),
-    flechas = document.querySelector('#flecha'),
+    btnFlecha = document.querySelector('#flecha'),
     txtConversion = document.querySelector('#txtConversion'),
     btnResultado = document.querySelector('#btnResultado'),
     valorInicial = document.querySelector('#valorInicial'),//Revisar
@@ -24,9 +24,13 @@ const crearSelectsValores = async () => {
 crearSelectsValores();
 
 function calculoValores() {
-    /*if(valor.value == 0 || valor.value == ''){
-        swet alert error
-    }*/
+    if (valor.value == 0 || valor.value == '') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: 'Debe ingresar un valor mayor a cero'
+        })
+    }
 
     let valorDato = parseFloat(valor.value);
     //Bit
@@ -237,4 +241,10 @@ function calculoValores() {
 btnResultado.addEventListener('click', (e) => {
     e.preventDefault();
     calculoValores();
+});
+
+btnFlecha.addEventListener('click', () => {
+    let invertir = valorInicial.value;
+    valorInicial.value = valorFinal.value;
+    valorFinal.value = invertir;
 })

@@ -1,0 +1,8 @@
+body{
+    background-color: darkslategrey;
+    min-height: 100vh;
+}
+
+.card-header{
+    background-color: brown;
+}

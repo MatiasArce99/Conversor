@@ -9,10 +9,9 @@
     <title>Simulador</title>
 </head>
 <body>
-    <header>
-
+    <header class="header">
     </header>
-    <main>
+    <main class="main">
         <section>
             <div class="container mt-5 conversor">
                 <div class="card m-auto">
@@ -32,7 +31,9 @@
                                     </select>
                                 </div>
                                 <div class="col-1" id="flecha">
-                                    <i class="fas fa-exchange-alt"></i>
+                                    <button type="button" class="btn btn-outline-warning">
+                                        invertir
+                                    </button>
                                 </div>
                                 <div class="col input-group mb-3" id="final">
                                     <select class="form-select" id="valorFinal">
@@ -43,19 +44,18 @@
                         </form>
                         <div id="txtConversion">Esperando conversión...</div>
                     </div>
-                    <div class="card-footer d-grid">       
-                        <button id="btnResultado" class="btn btn-outline-primary btn-lg m-auto">
-                            Calcular
-                        </button>
+                    <div class="card-footer d-grid">                       
+                        <button id="btnResultado" type="button" class="btn btn-dark btn-lg m-auto">Calcular</button>
                     </div>
                 </div>        
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <p>Proyecto Coderhouse</p>
     </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
