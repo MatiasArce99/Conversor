@@ -1,0 +1,28 @@
+[{
+    "tipoUnidad" : "Datos",
+    "nombre" : "bit"
+},
+{
+    "tipoUnidad" : "Datos",
+    "nombre" : "Byte"
+},
+{
+    "tipoUnidad" : "Datos",
+    "nombre" : "Kilobyte"
+},
+{
+    "tipoUnidad" : "Datos",
+    "nombre" : "Megabyte"
+},
+{
+    "tipoUnidad" : "Datos",
+    "nombre" : "Gigabyte"
+},
+{
+    "tipoUnidad" : "Datos",
+    "nombre" : "Terabyte"
+},
+{
+    "tipoUnidad" : "Datos",
+    "nombre" : "Petabyte"
+}]
