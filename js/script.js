@@ -1,12 +1,10 @@
-const apiKey = 'cd9bdd00ecb28000e4d862b0';
-
 const valor = document.querySelector('#valor'),
     btnFlecha = document.querySelector('#flecha'),
     txtConversion = document.querySelector('#txtConversion'),
     btnResultado = document.querySelector('#btnResultado'),
-    valorInicial = document.querySelector('#valorInicial'),//Revisar
+    valorInicial = document.querySelector('#valorInicial'),
     valorFinal = document.querySelector('#valorFinal'),
-    desplegable = document.querySelectorAll('form select')//Revisar
+    desplegable = document.querySelectorAll('form select')
 
 const crearSelectsValores = async () => {
     const respuesta = await fetch('./js/valores.json');
@@ -33,7 +31,7 @@ function calculoValores() {
     }
 
     let valorDato = parseFloat(valor.value);
-    //Bit
+    
     if (valorInicial.value == 'bit' && valorFinal.value == 'bit') {
         let resultado = valorDato * 1;
         txtConversion.innerHTML = valorDato + ' bits es ' + resultado + ' bits';
@@ -62,7 +60,7 @@ function calculoValores() {
         let resultado = (valorDato / 8e+15);
         txtConversion.innerHTML = valorDato + ' bits es ' + resultado + ' petabytes';
     }
-    //Byte
+    
     if (valorInicial.value == 'Byte' && valorFinal.value == 'bit') {
         let resultado = valorDato * 8;
         txtConversion.innerHTML = valorDato + ' bytes es ' + resultado + ' bits';
@@ -91,7 +89,7 @@ function calculoValores() {
         let resultado = (valorDato / 1e+15);
         txtConversion.innerHTML = valorDato + ' bytes es ' + resultado + ' petabytes';
     }
-    //Kilobyte
+    
     if (valorInicial.value == 'Kilobyte' && valorFinal.value == 'bit') {
         let resultado = valorDato * 8000;
         txtConversion.innerHTML = valorDato + ' kilobytes es ' + resultado + ' bits';
@@ -120,7 +118,7 @@ function calculoValores() {
         let resultado = (valorDato / 1e+12);
         txtConversion.innerHTML = valorDato + ' kilobytes es ' + resultado + ' petabytes';
     }
-    //Megabyte
+    
     if (valorInicial.value == 'Megabyte' && valorFinal.value == 'bit') {
         let resultado = valorDato * 1e+6;
         txtConversion.innerHTML = valorDato + ' megabytes es ' + resultado + ' bits';
@@ -149,7 +147,7 @@ function calculoValores() {
         let resultado = valorDato / 1e+9;
         txtConversion.innerHTML = valorDato + ' megabytes es ' + resultado + ' petabytes';
     }
-    //Gigabyte
+    
     if (valorInicial.value == 'Gigabyte' && valorFinal.value == 'bit') {
         let resultado = valorDato * 8e+9;
         txtConversion.innerHTML = valorDato + ' gigabytes es ' + resultado + ' bits';
@@ -178,7 +176,7 @@ function calculoValores() {
         let resultado = valorDato * 1;
         txtConversion.innerHTML = valorDato + ' gigabytes es ' + resultado + ' petabytes';
     }
-    //Terabyte
+    
     if (valorInicial.value == 'Terabyte' && valorFinal.value == 'bit') {
         let resultado = valorDato * 1e+12;
         txtConversion.innerHTML = valorDato + ' terabytes es ' + resultado + ' bits';
@@ -207,7 +205,7 @@ function calculoValores() {
         let resultado = valorDato / 1000;
         txtConversion.innerHTML = valorDato + ' terabytes es ' + resultado + ' petabytes';
     }
-    //Petabyte
+    
     if (valorInicial.value == 'Petabyte' && valorFinal.value == 'bit') {
         let resultado = valorDato * 8e+15;
         txtConversion.innerHTML = valorDato + ' petabytes es ' + resultado + ' bits';
